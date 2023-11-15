@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flexcv-earth"
+version = "0.1.0alpha"
+description = "Warpper classes for the R-package earth to use it with flexcv"
+readme = "README.md"
+authors = [{ name = "Fabian Rosenthal" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["machine learning"]
+dependencies = [
+  "matplotlib == 3.8.0",
+  "neptune == 1.8.2",
+  "numpy == 1.23.4",
+  "optuna == 3.4.0",
+  "pandas == 1.5.1",
+  "rpy2 == 3.5.14",
+  "scikit_learn == 1.3.2",
+  "flexcv",
+  "mkdocs",
+  "mkdocs-material",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+"pytest",
+"pytest-cov",
+"mkdocs",
+"mkdocstrings",
+"mktestdocs",
+"mkdocs-material",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/radlfabs/flexcv-earth"
+"Bug Tracker" = "https://github.com/radlfabs/flexcv-earth/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["flexcv-earth*"]
+exclude = ["earth_env*"]  # empty by default
+namespaces = false  # true by default
+
+[isort]
+profile = "black"
+known_first_party = "flexcv"
+
+[black]
+line-length = 89
+target-version = ['py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | test
+)/
+'''
