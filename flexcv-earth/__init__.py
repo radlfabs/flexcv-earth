@@ -2,3 +2,6 @@
 
 Author: Fabian Rosenthal
 """
+
+from .models import EarthRegressor
+from .model_postprocessing import EarthModelPostProcessor
