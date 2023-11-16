@@ -1,0 +1,70 @@
+site_name: flexcv-earth
+
+site_url: https://radlfabs.github.io/flexcv-earth/
+site_author: Fabian Rosenthal
+site_description: >-
+  Earth Regression for Python.
+copyright: Copyright &copy; 2023 Fabian Rosenthal
+
+theme:
+  name: material
+  logo: images/icon_c.png
+  features:
+    # - navigation.tabs
+    # - navigation.top
+    # - navigation.sections
+    - navigation.expand
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+# do not search in source code
+- search:
+    separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+    exclude: [flexcv-earth]
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [.]
+        options:
+          # show_root_toc_entry: true
+          show_root_heading: true
+          show_root_members_full_path: true
+          show_root_full_path: true
+          returns_named_value: false
+          docstring_style: google
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
