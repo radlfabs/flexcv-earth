@@ -3,6 +3,7 @@
 
 name: tests
 
+
 on:
   push:
     branches: [ main ]
@@ -41,4 +42,3 @@ jobs:
       with:
         pytest-coverage-path: ./pytest-coverage.txt
         junitxml-path: ./pytest.xml
-          
