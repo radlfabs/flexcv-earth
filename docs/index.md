@@ -54,10 +54,10 @@ cv = (
 
 ## Reference
 
-::: flexcv-earth.models.EarthRegressor
+::: flexcv_earth.models.EarthRegressor
     rendering:
         show_root_heading: false
 
-::: flexcv-earth.model_postprocessing.EarthModelPostProcessor
+::: flexcv_earth.model_postprocessing.EarthModelPostProcessor
     rendering:
         show_root_heading: false
