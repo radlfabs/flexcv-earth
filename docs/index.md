@@ -18,7 +18,7 @@ Define a model configuration with yaml as follows:
 
 ```python
 from flexcv import CrossValidation
-from flexcv-earth import EarthRegressor
+from flexcv_earth import EarthRegressor, EarthModelPostProcessor
 from flexcv.synthesizer import generate_data
 
 X, y, _, _ = generate_data(10, 100)
@@ -28,7 +28,7 @@ EarthRegressor:
     requires_inner_cv: True
     n_trials: 200
     allows_n_jobs: False
-    model: flexcv-earth.EarthRegressor
+    model: EarthRegressor
     params:
         degree: !Int
             low: 1
@@ -42,7 +42,7 @@ EarthRegressor:
         newvar_penalty: !Float
             low: 0.01
             high: 0.2
-    post_processor: flexcv-earth.EarthModelPostProcessor
+    post_processor: EarthModelPostProcessor
     add_merf: True
 """
 
