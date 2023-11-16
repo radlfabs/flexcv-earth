@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "flexcv-earth"
+name = "flexcv_earth"
 version = "0.1.0alpha"
 description = "Warpper classes for the R-package earth to use it with flexcv"
 readme = "README.md"
