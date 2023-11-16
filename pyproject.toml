@@ -46,7 +46,7 @@ dev = [
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["flexcv-earth*"]
+include = ["flexcv_earth*"]
 exclude = ["earth_env*"]  # empty by default
 namespaces = false  # true by default
 

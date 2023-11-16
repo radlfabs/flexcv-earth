@@ -8,7 +8,7 @@ It then can be used as a sklearn estimator in python and especially in the `flex
 ## Installation
 
 ```bash
-pip install flexcv-earth @ git+https://github.com/radlfabs/flexcv-earth
+pip install flexcv_earth @ git+https://github.com/radlfabs/flexcv-earth
 ```
 
 ## Use with flexcv

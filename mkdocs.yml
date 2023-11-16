@@ -42,7 +42,7 @@ plugins:
 # do not search in source code
 - search:
     separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-    exclude: [flexcv-earth]
+    exclude: [flexcv_earth]
 - mkdocstrings:
     handlers:
       python:
