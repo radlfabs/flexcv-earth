@@ -42,6 +42,7 @@ dev = [
 [project.urls]
 "Homepage" = "https://github.com/radlfabs/flexcv-earth"
 "Bug Tracker" = "https://github.com/radlfabs/flexcv-earth/issues"
+"Documenation" = "https://radlfabs.github.io/flexcv-earth/"
 
 [tool.setuptools.packages.find]
 where = ["."]
